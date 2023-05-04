@@ -44,46 +44,46 @@ public class AnimalSurvey extends JFrame implements ActionListener{
     JTextField petInput = new RoundTextField(15);
     JButton submit = new JButton("Submit");
     Font oswald = new Font("Oswald", Font.PLAIN, 18);
-    Font vina = new Font("Kanit", Font.PLAIN, 18);
+    Font kanit = new Font("Kanit", Font.PLAIN, 18);
 
-    Color color = new Color(123, 191, 204);
-    Color color2 = new Color(0, 230, 218);
-    Color color3 = new Color(0, 152, 179);
+    Color color = new Color(128, 255, 0);
+    Color color2 = new Color(170, 255, 0);
+    Color color3 = new Color(84, 168, 0);
 
     AnimalSurvey(){
         
-        this.setSize(530, 550);
+        this.setSize(525, 550);
         this.setVisible(true);
         this.setLayout(null);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         
         question1.setLocation(10, 10);
         question1.setSize(200, 30);
-        question1.setFont(vina);
+        question1.setFont(kanit);
 
         question2.setLocation(10, 100);
         question2.setSize(250, 30);
-        question2.setFont(vina);
+        question2.setFont(kanit);
 
         question3.setLocation(10, 190);
         question3.setSize(250, 30);
-        question3.setFont(vina);
+        question3.setFont(kanit);
 
         question4.setLocation(10, 280);
         question4.setSize(250, 30);
-        question4.setFont(vina);
+        question4.setFont(kanit);
 
         panel.setSize(470,470);
         panel.setLocation(20, 20);
         panel.setBackground(color);
         panel.setLayout(null);
-        panel.setFont(vina);
+        panel.setFont(kanit);
 
         panel2.setSize(530,550);
         panel2.setLocation(0, 0);
         panel2.setBackground(color3);
         panel2.setLayout(null);
-        panel2.setFont(vina);
+        panel2.setFont(kanit);
 
         group1.add(animalR1);
         group1.add(animalR2);
@@ -172,11 +172,12 @@ public class AnimalSurvey extends JFrame implements ActionListener{
         petInput.setSize(250, 30);
         petInput.setLocation(10, 330);
         petInput.setBorder(null);
-        petInput.setFont(vina);
+        petInput.setFont(kanit);
 
         submit.setLocation(190, 400);
         submit.setSize(100, 40);
         submit.setBackground(color2);
+        submit.setFocusable(false);
         submit.addActionListener(this);
 
         this.add(panel2);

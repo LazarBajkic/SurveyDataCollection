@@ -69,5 +69,9 @@ public class SurveyFrame extends JFrame implements ActionListener{
             AnimalSurvey AS = new AnimalSurvey();
             this.dispose();
         }
+        else if (r2.isSelected()){
+            SportsSurvey SS = new SportsSurvey();
+            this.dispose();
+        }
     }
 }
